@@ -15,8 +15,9 @@ public class Win {
 
     public static boolean isHorizontalWin(int[][] board, int row) {
         boolean rsl = true;
-        for (int i = 0; i < board[row].length; i++) {
-            if (board[row][i] != 1) {
+
+        for (int item : board[row]) {
+            if (item != 1) {
                 rsl = false;
                 break;
             }
