@@ -5,7 +5,7 @@ public class Win {
         boolean rsl = false;
 
         for (int i = 0; i < board.length; i++) {
-            if (isHorizontalWin(board, i) || isVerticalWin(board, i)) {
+            if (board[i][i] == 1 && (isHorizontalWin(board, i) || isVerticalWin(board, i))) {
                 rsl = true;
                 break;
             }
